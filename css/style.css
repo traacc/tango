@@ -1949,6 +1949,35 @@ button.btn {
   margin: 0 auto;
 }
 
+.midImg .midImg__inner {
+  position: relative;
+}
+
+.midImg .midImg__inner .midImg__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.midImg .midImg__inner .midImg__img img:first-child {
+  position: absolute;
+  z-index: 1;
+  -webkit-filter: blur(32px);
+  filter: blur(32px);
+}
+
+.midImg .midImg__inner .midImg__img img:nth-child(2) {
+  z-index: 5;
+}
+
+.midImg .midImg__inner .midImg__img img:last-child {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  -webkit-filter: blur(32px);
+  filter: blur(32px);
+}
+
 .program__item {
   background-color: #F9F9F9;
   padding-bottom: 1em;
@@ -2094,35 +2123,6 @@ button.btn {
 
 .schedule .note {
   color: #707070;
-}
-
-.midImg .midImg__inner {
-  position: relative;
-}
-
-.midImg .midImg__inner .midImg__img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.midImg .midImg__inner .midImg__img img:first-child {
-  position: absolute;
-  z-index: 1;
-  -webkit-filter: blur(32px);
-  filter: blur(32px);
-}
-
-.midImg .midImg__inner .midImg__img img:nth-child(2) {
-  z-index: 5;
-}
-
-.midImg .midImg__inner .midImg__img img:last-child {
-  position: absolute;
-  z-index: 1;
-  right: 0;
-  -webkit-filter: blur(32px);
-  filter: blur(32px);
 }
 
 .miloga .miloga__inner .miloga__context .miloga__context .miloga__text {
@@ -2656,6 +2656,10 @@ table td {
     padding-right: 10px;
   }
 
+  .container {
+    padding: 0;
+  }
+
   .footer .footer__inner {
     text-align: center;
   }
@@ -2710,6 +2714,7 @@ table td {
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
+    margin-top: 0.8em;
   }
 
   .about .about__inner h2.section__title.mobile {
@@ -2728,6 +2733,10 @@ table td {
     height: unset;
   }
 
+  .events .events__inner h2.section__title {
+    font-size: 18px;
+  }
+
   .events .events__inner .events__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -2738,9 +2747,19 @@ table td {
     grid-template-columns: 1fr;
   }
 
+  .maestros .maestros__inner .maestros__list li img {
+    width: 285px;
+    margin: 0 auto;
+  }
+
   .djs .djs__inner .djs__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+
+  .djs .djs__inner .djs__list li img {
+    width: 285px;
+    margin: 0 auto;
   }
 
   .orchestra .orchestra__main {
@@ -2772,6 +2791,11 @@ table td {
 
   .locations .locations__inner .locations__main .locations__item .locations__pic {
     width: 100%;
+  }
+
+  .midImg .midImg__inner .midImg__img img:first-child,
+  .midImg .midImg__inner .midImg__img img:last-child {
+    display: none;
   }
 
   .schedule__header {
