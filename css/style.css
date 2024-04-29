@@ -2135,6 +2135,7 @@ button.btn {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  text-align: justify;
 }
 
 .miloga .miloga__inner .miloga__pics {
@@ -2151,6 +2152,10 @@ button.btn {
   box-shadow: 1px 1px 15px 0px #696969;
   width: 590px;
   height: 340px;
+}
+
+.price .desc {
+  text-align: justify;
 }
 
 .price .price__block {
