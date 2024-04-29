@@ -1736,6 +1736,7 @@ button.btn {
 .about .about__inner .about__context p {
   font-style: italic;
   margin-bottom: 2em;
+  text-align: justify;
 }
 
 .about .about__inner .about__pic {
@@ -1871,6 +1872,7 @@ button.btn {
   column-gap: 2em;
   font-size: 18px;
   line-height: 1.43;
+  text-align: justify;
 }
 
 .orchestra .orchestra__main p {
@@ -1920,6 +1922,7 @@ button.btn {
   padding-top: 1.7em;
   padding-bottom: 2em;
   line-height: 1.78;
+  text-align: justify;
 }
 
 .locations .locations__inner .locations__main .locations__item:nth-child(even) {
@@ -2199,6 +2202,11 @@ button.btn {
   box-shadow: 1px 1px 15px 0px #696969;
 }
 
+.textBlock,
+.picTextBlock {
+  text-align: justify;
+}
+
 .picTextBlock {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2382,6 +2390,14 @@ section.tornamentJury .tornamentJury__inner img {
   height: revert-layer;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+section.tornamentJury .tornamentJury__inner p {
+  text-align: justify;
+}
+
+.regDesc__text {
+  text-align: justify;
 }
 
 form.regForm__main {
