@@ -773,6 +773,10 @@ button.btn {
   text-decoration: underline;
 }
 
+.footer .footer__inner .footer__content .footer__info .email span {
+  font-weight: 600;
+}
+
 .footer .footer__inner .footer__content .footer__column:first-child {
   max-width: 50%;
 }
@@ -2400,7 +2404,7 @@ section.tornamentHeader .tornamentHeaderBlock {
   padding: 40px;
 }
 
-section.tornamentHeader .tornamentHeaderBlock h2 {
+section.tornamentHeader .tornamentHeaderBlock h2.section__title {
   font-size: 32px;
 }
 
@@ -2414,6 +2418,10 @@ section.tornamentIntro {
 
 section.tornamentIntro .tornamentIntro__inner h2 {
   font-size: 32px;
+}
+
+section.tornamentIntro .tornamentIntro__inner p {
+  text-align: justify;
 }
 
 section.tornamentIntro .tornamentIntro__inner .tornamentIntro__pics {
@@ -2432,6 +2440,8 @@ section.tornamentIntro .tornamentIntro__inner .tornamentIntro__pics img {
   border: 3px solid #fff;
   -webkit-box-shadow: 1px 1px 15px 0px #696969;
   box-shadow: 1px 1px 15px 0px #696969;
+  -o-object-position: top;
+  object-position: top;
 }
 
 section.tornamentPlace .tornamentPlace__inner {
@@ -2501,6 +2511,11 @@ section.tornamentJury .tornamentJury__inner img {
 
 section.tornamentJury .tornamentJury__inner p {
   text-align: justify;
+}
+
+section.tornamentJury .tornamentJury__inner p a {
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 .regDesc__text {
@@ -2997,6 +3012,10 @@ table td {
     flex-direction: column;
   }
 
+  section.tornamentHeader .tornamentHeaderBlock h2.section__title {
+    font-size: 18px;
+  }
+
   section.tornamentHeader .tornamentHeaderBlock .tornamentHeaderBlock__content {
     width: 100%;
     text-align: center;
@@ -3007,7 +3026,7 @@ table td {
   }
 
   .tornamentIntro__inner {
-    text-align: center;
+    text-align: justify;
   }
 
   .tornamentIntro__pics img {
