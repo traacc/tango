@@ -94,17 +94,23 @@
                       </div>
                       <div class="inputEl levelField">
                         <label for="level">Ваш уровень<span class="redMark">*</span></label>
-                        <div class="row"> 
-                          <input class="beginerLevel" id="beginerLevel" type="radio" name="level" value="b">
-                          <label for="beginerLevel">Начинающий</label>
-                          <input class="middleLevel" id="middleLevel" type="radio" name="level" value="m">
-                          <label for="middleLevel">Средний</label>
-                          <input class="advLevel" id="advLevel" type="radio" name="level" value="a">
-                          <label for="advLevel">Продвинутый</label>
+                        <div class="row">
+                          <div class="el">
+                            <input class="beginerLevel" id="beginerLevel" type="radio" name="level" value="b">
+                            <label for="beginerLevel">Начинающий</label>
+                          </div>
+                          <div class="el">
+                            <input class="middleLevel" id="middleLevel" type="radio" name="level" value="m">
+                            <label for="middleLevel">Средний</label>
+                          </div>
+                          <div class="el">
+                            <input class="advLevel" id="advLevel" type="radio" name="level" value="a">
+                            <label for="advLevel">Продвинутый</label>
+                          </div>
                         </div>
                       </div>
                       <div class="inputEl roleField">
-                        <label for="name">Ваша роль в паре<span class="redMark">*</span></label>
+                        <label for="name">Ваша роль в паре</label>
                         <div class="row"> 
                           <input class="primaryRole" id="primaryRole" type="radio" name="role" value="p">
                           <label for="primaryRole">Ведущий</label>
@@ -113,7 +119,7 @@
                         </div>
                       </div>
                       <div class="inputEl partnerField">
-                        <label for="name">Есть ли у Вас партнер для занятий?<br>(Для Вашего партнера нужна отдельная регистрация!)*<span class="redMark">*</span></label>
+                        <label for="name">Есть ли у Вас партнер для занятий?<br>(Для Вашего партнера нужна отдельная регистрация!)</label>
                         <div class="row"> 
                           <input class="primaryRole" id="hasPartner" type="radio" name="partner" value="yes">
                           <label for="hasPartner">Да</label>
@@ -122,7 +128,7 @@
                         </div>
                       </div>
                       <div class="inputEl">
-                        <label for="namePartner">Имя партнера<span class="redMark">*</span></label>
+                        <label for="namePartner">Имя и Фамилия Вашего партнера</label>
                         <input class="namePartner" id="namePartner" type="text" name="namePartner" placeholder="Введите имя и фамилию">
                       </div>
                     </div>
@@ -130,7 +136,7 @@
                 </div>
                 <div class="regForm__block special">
                   <h2 class="section__title">2. Выберите подходящие для вас спецпредложения*</h2>
-                  <div class="note">(*) Срок действия предложений ограничен. Спец. предложения не суммируются с другими мероприятиями для расчета % скидки. Стоимость пакетов указана на 1 человека.</div>
+                  <div class="note">(*) Срок действия предложений ограничен. Спец. предложения не суммируются с другими мероприятиями для расчета % скидки.<b>Стоимость пакетов указана на 1 человека.</b></div>
                   <div class="list">
                     <div class="row">
                       <input class="special" id="s1" type="checkbox" name="special" value="Скидка 20% для пар при одновременной регистрации и оплате парой участников (не распространяется на Пакеты «Milonga pass», «WNT pass», «Weekend pass» и Танго Концерт)">
@@ -154,56 +160,56 @@
                   <h2 class="section__title">3. Выберите пакеты с милонгами или отдельные милонги</h2>
                   <div class="list">
                     <div class="row">
-                      <input class="milongs" id="m1" type="checkbox" name="milongs" value="Пакет «WNT pass» для пар:  мастер-классы+уроки+лекция+милонги+экскурсии = 18 500 руб./19500 руб. с человека при одновременной регистрации и оплате парой участников (не включает Танго Кораблик и Танго Концерт)">
-                      <label for="m1">Пакет «WNT pass» для пар:  мастер-классы+уроки+лекция+милонги+экскурсии = 18 500 руб./19500 руб. с человека при одновременной регистрации и оплате парой участников (не включает Танго Кораблик и Танго Концерт)</label>
+                      <input class="masterClass" id="m1" type="checkbox" name="masterClass" value="Пакет «Milonga pass»: все вечерние и ночные милонги 7-12 июня = 5000 руб./6000 руб. (не включает Танго Кораблик и Танго Концерт)">
+                      <label for="m1">Пакет «Milonga pass»: все вечерние и ночные милонги 7-12 июня = 5000 руб./6000 руб. (не включает Танго Кораблик и Танго Концерт)</label>
                     </div>
                     <div class="row">
-                      <input class="milongs" id="m2" type="checkbox" name="milongs" value="Пакет «Weekend pass»: 6  мастер-классов основной программы и 3 Гранд-милонги 7-9 июня = 10 000 руб./11 500 руб.">
-                      <label for="m2">Пакет «Weekend pass»: 6  мастер-классов основной программы и 3 Гранд-милонги 7-9 июня = 10 000 руб./11 500 руб.</label>
+                      <input class="masterClass" id="m2" type="checkbox" name="masterClass" value="Пакет «WNT pass» для пар:  мастер-классы+уроки+лекция+милонги+экскурсии = 18 500 руб./19500 руб. с человека при одновременной регистрации и оплате парой участников (не включает Танго Кораблик и Танго Концерт)">
+                      <label for="m2">Пакет «WNT pass» для пар:  мастер-классы+уроки+лекция+милонги+экскурсии = 18 500 руб./19500 руб. с человека при одновременной регистрации и оплате парой участников (не включает Танго Кораблик и Танго Концерт)</label>
                     </div>
                     <div class="row">
-                      <input class="milongs" id="m3" type="checkbox" name="milongs" value="08 июня №1, 13:0000 – Рауль и Дана. Индивидуальная техника для обеих ролей. Рассмотрим особый подход к диссоциации и ведению/ответу, а также как использовать спину в качестве мотора комфортных вращений. Все уровни. Пара не нужна.">
-                      <label for="m3">08 июня №1, 13:0000 – Рауль и Дана. Индивидуальная техника для обеих ролей. Рассмотрим особый подход к диссоциации и ведению/ответу, а также как использовать спину в качестве мотора комфортных вращений. Все уровни. Пара не нужна.</label>
+                      <input class="masterClass" id="m3" type="checkbox" name="masterClass" value="Пакет «Weekend pass»: 6  мастер-классов основной программы и 3 Гранд-милонги 7-9 июня = 10 000 руб./11 500 руб.">
+                      <label for="m3">Пакет «Weekend pass»: 6  мастер-классов основной программы и 3 Гранд-милонги 7-9 июня = 10 000 руб./11 500 руб.</label>
                     </div>
                     <div class="row">
-                      <input class="milongs" id="m4" type="checkbox" name="milongs" value="08 июня №2, 14:30 – Нестор и Лиза. Баррида для партнеров и дам. С этим элементом мы найдём связь в паре, поиграем с музыкой, сделаем движение выразительно в ритм или мелодию. Уровни BC.">
-                      <label for="m4">08 июня №2, 14:30 – Нестор и Лиза. Баррида для партнеров и дам. С этим элементом мы найдём связь в паре, поиграем с музыкой, сделаем движение выразительно в ритм или мелодию. Уровни BC.</label>
+                      <input class="masterClass" id="m4" type="checkbox" name="masterClass" value="07 июня №1, 21:00 - 03:00  Торжественный Бал «Танго Белых Ночей». Празднуем Открытие фестиваля и день рождения Юлии Зуевой. DJ Hernan Brusa. Шоу маэстро фестиваля. Особняк Серебряковой, наб. Кутузова, д. 22">
+                      <label for="m4">07 июня №1, 21:00 - 03:00  Торжественный Бал «Танго Белых Ночей». Празднуем Открытие фестиваля и день рождения Юлии Зуевой. DJ Hernan Brusa. Шоу маэстро фестиваля. Особняк Серебряковой, наб. Кутузова, д. 22</label>
                     </div>
                     <div class="row">
-                      <input class="milongs" id="m5" type="checkbox" name="milongs" value="08 июня №3, 14:30 – Рауль и Дана. Салида. Различные вариации и интерпретации. Paso Basico от разных старых милонгеро: вкус, качество, музыкальность. Уровни АBС.">
-                      <label for="m5">08 июня №3, 14:30 – Рауль и Дана. Салида. Различные вариации и интерпретации. Paso Basico от разных старых милонгеро: вкус, качество, музыкальность. Уровни АBС.</label>
+                      <input class="masterClass" id="m5" type="checkbox" name="masterClass" value="08 июня №2, 16:00 - 19:00 Tango Open Air. Оплата Donation">
+                      <label for="m5">08 июня №2, 16:00 - 19:00 Tango Open Air. Оплата Donation</label>
                     </div>
                     <div class="row">
-                      <input class="milongs" id="m6" type="checkbox" name="milongs" value="08 июня №4, 16:00 – Эрнан и Мария. Общая ось, кольгады в близком объятии для танцпола. Уровни BC.">
-                      <label for="m6">08 июня №4, 16:00 – Эрнан и Мария. Общая ось, кольгады в близком объятии для танцпола. Уровни BC.</label>
+                      <input class="masterClass" id="m6" type="checkbox" name="masterClass" value="08 июня №3, 21:00 - 03:00 Белый Бал «Noche Blanca». DJ Raul Santana. Шоу маэстро фестиваля. Дресс-код: все оттенки белого! Особняк Серебряковой, наб. Кутузова, д. 22">
+                      <label for="m6">08 июня №3, 21:00 - 03:00 Белый Бал «Noche Blanca». DJ Raul Santana. Шоу маэстро фестиваля. Дресс-код: все оттенки белого! Особняк Серебряковой, наб. Кутузова, д. 22</label>
                     </div>
                     <div class="row">
-                      <input class="milongs" id="m7" type="checkbox" name="milongs" value="08 июня №5, 16:00 – Нестор и Лиза. Объятие, его эластичность от близкого к открытому для исполнения сложных фигур и интерпретации музыки. Уровни ABС.">
-                      <label for="m7">08 июня №5, 16:00 – Нестор и Лиза. Объятие, его эластичность от близкого к открытому для исполнения сложных фигур и интерпретации музыки. Уровни ABС.</label>
+                      <input class="masterClass" id="m7" type="checkbox" name="masterClass" value="09 июня №4, 16:00 - 19:00 Вечерняя милонга. Tangomania, ул. Чайковского, д. 26">
+                      <label for="m7">09 июня №4, 16:00 - 19:00 Вечерняя милонга. Tangomania, ул. Чайковского, д. 26</label>
                     </div>
                     <div class="row">
-                      <input class="milongs" id="m8" type="checkbox" name="milongs" value="08 июня №6, 17:30 – Эрнан и Мария. Milonguero стиль. Будем изучать секреты техники близкого объятия, динамичные элементы: ocho milonguero, giro milonguero, rebotes со сменой направления. Уровни АBC.">
-                      <label for="m8">08 июня №6, 17:30 – Эрнан и Мария. Milonguero стиль. Будем изучать секреты техники близкого объятия, динамичные элементы: ocho milonguero, giro milonguero, rebotes со сменой направления. Уровни АBC.     </label>
+                      <input class="masterClass" id="m8" type="checkbox" name="masterClass" value="09 июня №5, 21:00 - 01:00 № 5 Солнечный Бал «Milonga Del Sol». DJ Nestor Azorin и оркестр Tango Pasional.  Дворец «Олимпия», Литейный пр. д. 14">
+                      <label for="m8">09 июня №5, 21:00 - 01:00 № 5 Солнечный Бал «Milonga Del Sol». DJ Nestor Azorin и оркестр Tango Pasional.  Дворец «Олимпия», Литейный пр. д. 14       </label>
                     </div>
                     <div class="row">
-                      <input class="milongs" id="m9" type="checkbox" name="milongs" value="08 июня №7, 17:30 – Густаво и Юлия. Комбинации c boleo и ganchos. Использование пространства и внутренней динамики пары. Уровни BC.">
-                      <label for="m9">08 июня №7, 17:30 – Густаво и Юлия. Комбинации c boleo и ganchos. Использование пространства и внутренней динамики пары. Уровни BC.</label>
+                      <input class="masterClass" id="m9" type="checkbox" name="masterClass" value="10 июня №6, 21:30 - 01:00 Милонга Nuevo Argentino, DJ Gustavo Funes. Tangomania, ул. Чайковского, д. 26">
+                      <label for="m9">10 июня №6, 21:30 - 01:00 Милонга Nuevo Argentino, DJ Gustavo Funes. Tangomania, ул. Чайковского, д. 26</label>
                     </div>
                     <div class="row">
-                      <input class="milongs" id="m10" type="checkbox" name="milongs" value="08 июня №8, 19:00 – Густаво и Юлия. Фигуры для Танго Нуэво. Сакадас трипле и сольтадас комбинации. Уровни BC.">
-                      <label for="m10">08 июня №8, 19:00 – Густаво и Юлия. Фигуры для Танго Нуэво. Сакадас трипле и сольтадас комбинации. Уровни BC.</label>
+                      <input class="masterClass" id="m10" type="checkbox" name="masterClass" value="11 июня №7, 21:00 - 00:30 Праздничная вечеринка Fiesta ко дню рождения Рауля Сантаны! DJ Dana Tangomania, ул. Чайковского, д. 26">
+                      <label for="m10">11 июня №7, 21:00 - 00:30 Праздничная вечеринка Fiesta ко дню рождения Рауля Сантаны! DJ Dana Tangomania, ул. Чайковского, д. 26</label>
                     </div>
                     <div class="row">
-                      <input class="milongs" id="m11" type="checkbox" name="milongs" value="09 июня №9, 13:00 – Густаво и Юлия. Техника для партнеров и дам. Постура, шаг, очо, хиро. Все уровни. Пара не нужна.">
-                      <label for="m11">09 июня №9, 13:00 – Густаво и Юлия. Техника для партнеров и дам. Постура, шаг, очо, хиро. Все уровни. Пара не нужна.</label>
+                      <input class="masterClass" id="m11" type="checkbox" name="masterClass" value="11 июня №8, 23:30 - 02:45 (Время может немного измениться) Танго Кораблик, танцуем и разводим мосты над Невой! DJs Kirill &amp; Larisa">
+                      <label for="m11">11 июня №8, 23:30 - 02:45 (Время может немного измениться) Танго Кораблик, танцуем и разводим мосты над Невой! DJs Kirill & Larisa</label>
                     </div>
                     <div class="row">
-                      <input class="milongs" id="m12" type="checkbox" name="milongs" value="09 июня №10, 13:00 – Эрнан и Мария. Энроске и калесита. Связь в паре, динамика и украшения для обеих ролей. Уровни BC.">
-                      <label for="m12">09 июня №10, 13:00 – Эрнан и Мария. Энроске и калесита. Связь в паре, динамика и украшения для обеих ролей. Уровни BC.</label>
+                      <input class="masterClass" id="m12" type="checkbox" name="masterClass" value="12 июня №9, 16:00 - 19:00 Tango Open Air.  Оплата Donation">
+                      <label for="m12">12 июня №9, 16:00 - 19:00 Tango Open Air.  Оплата Donation</label>
                     </div>
                     <div class="row">
-                      <input class="milongs" id="m13" type="checkbox" name="milongs" value="09 июня №11, 14:30 – Рауль и Дана. Байбенес. Ритмические варианты каминаты vaivenes под разные оркестры. Уровни АBC.">
-                      <label for="m13">09 июня №11, 14:30 – Рауль и Дана. Байбенес. Ритмические варианты каминаты vaivenes под разные оркестры. Уровни АBC.</label>
+                      <input class="masterClass" id="m13" type="checkbox" name="masterClass" value="12 июня №10, 21:00 - 01:00 After Party в Тангомании. Tangomania, ул. Чайковского, д. 26">
+                      <label for="m13">12 июня №10, 21:00 - 01:00 After Party в Тангомании. Tangomania, ул. Чайковского, д. 26</label>
                     </div>
                   </div>
                 </div>
@@ -215,116 +221,114 @@
                   </div>
                   <div class="list">
                     <div class="row">
-                      <input class="masterClass" id="mc1" type="checkbox" name="masterClass" value="Пакет «Milonga pass»: все вечерние и ночные милонги 7-12 июня = 5000 руб./6000 руб. (не включает Танго Кораблик и Танго Концерт)">
-                      <label for="mc1">Пакет «Milonga pass»: все вечерние и ночные милонги 7-12 июня = 5000 руб./6000 руб. (не включает Танго Кораблик и Танго Концерт)</label>
+                      <input class="milongs" id="mc1" type="checkbox" name="milongs" value="Пакет «WNT pass» для пар:  мастер-классы+уроки+лекция+милонги+экскурсии = 18 500 руб./19500 руб. с человека при одновременной регистрации и оплате парой участников (не включает Танго Кораблик и Танго Концерт)">
+                      <label for="mc1">Пакет «WNT pass» для пар:  мастер-классы+уроки+лекция+милонги+экскурсии = 18 500 руб./19500 руб. с человека при одновременной регистрации и оплате парой участников (не включает Танго Кораблик и Танго Концерт)</label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="mc2" type="checkbox" name="masterClass" value="Пакет «WNT pass» для пар:  мастер-классы+уроки+лекция+милонги+экскурсии = 18 500 руб./19500 руб. с человека при одновременной регистрации и оплате парой участников (не включает Танго Кораблик и Танго Концерт)">
-                      <label for="mc2">Пакет «WNT pass» для пар:  мастер-классы+уроки+лекция+милонги+экскурсии = 18 500 руб./19500 руб. с человека при одновременной регистрации и оплате парой участников (не включает Танго Кораблик и Танго Концерт)</label>
+                      <input class="milongs" id="mc2" type="checkbox" name="milongs" value="Пакет «Weekend pass»: 6  мастер-классов основной программы и 3 Гранд-милонги 7-9 июня = 10 000 руб./11 500 руб.">
+                      <label for="mc2">Пакет «Weekend pass»: 6  мастер-классов основной программы и 3 Гранд-милонги 7-9 июня = 10 000 руб./11 500 руб.</label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="mc3" type="checkbox" name="masterClass" value="Пакет «Weekend pass»: 6  мастер-классов основной программы и 3 Гранд-милонги 7-9 июня = 10 000 руб./11 500 руб.">
-                      <label for="mc3">Пакет «Weekend pass»: 6  мастер-классов основной программы и 3 Гранд-милонги 7-9 июня = 10 000 руб./11 500 руб.</label>
+                      <input class="milongs" id="mc3" type="checkbox" name="milongs" value="08 июня №1, 13:0000 – Рауль и Дана. Индивидуальная техника для обеих ролей. Рассмотрим особый подход к диссоциации и ведению/ответу, а также как использовать спину в качестве мотора комфортных вращений. Все уровни. Пара не нужна.">
+                      <label for="mc3">08 июня №1, 13:0000 – Рауль и Дана. Индивидуальная техника для обеих ролей. Рассмотрим особый подход к диссоциации и ведению/ответу, а также как использовать спину в качестве мотора комфортных вращений. Все уровни. Пара не нужна.</label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="mc4" type="checkbox" name="masterClass" value="07 июня №1, 21:00 - 03:00  Торжественный Бал «Танго Белых Ночей». Празднуем Открытие фестиваля и день рождения Юлии Зуевой. DJ Hernan Brusa. Шоу маэстро фестиваля. Особняк Серебряковой, наб. Кутузова, д. 22">
-                      <label for="mc4">07 июня №1, 21:00 - 03:00  Торжественный Бал «Танго Белых Ночей». Празднуем Открытие фестиваля и день рождения Юлии Зуевой. DJ Hernan Brusa. Шоу маэстро фестиваля. Особняк Серебряковой, наб. Кутузова, д. 22</label>
+                      <input class="milongs" id="mc4" type="checkbox" name="milongs" value="08 июня №2, 14:30 – Нестор и Лиза. Баррида для партнеров и дам. С этим элементом мы найдём связь в паре, поиграем с музыкой, сделаем движение выразительно в ритм или мелодию. Уровни BC.">
+                      <label for="mc4">08 июня №2, 14:30 – Нестор и Лиза. Баррида для партнеров и дам. С этим элементом мы найдём связь в паре, поиграем с музыкой, сделаем движение выразительно в ритм или мелодию. Уровни BC.</label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="mc5" type="checkbox" name="masterClass" value="08 июня №2, 16:00 - 19:00 Tango Open Air. Оплата Donation">
-                      <label for="mc5">08 июня №2, 16:00 - 19:00 Tango Open Air. Оплата Donation</label>
+                      <input class="milongs" id="mc5" type="checkbox" name="milongs" value="08 июня №3, 14:30 – Рауль и Дана. Салида. Различные вариации и интерпретации. Paso Basico от разных старых милонгеро: вкус, качество, музыкальность. Уровни АBС.">
+                      <label for="mc5">08 июня №3, 14:30 – Рауль и Дана. Салида. Различные вариации и интерпретации. Paso Basico от разных старых милонгеро: вкус, качество, музыкальность. Уровни АBС.</label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="mc6" type="checkbox" name="masterClass" value="08 июня №3, 21:00 - 03:00 Белый Бал «Noche Blanca». DJ Raul Santana. Шоу маэстро фестиваля. Дресс-код: все оттенки белого! Особняк Серебряковой, наб. Кутузова, д. 22">
-                      <label for="mc6">08 июня №3, 21:00 - 03:00 Белый Бал «Noche Blanca». DJ Raul Santana. Шоу маэстро фестиваля. Дресс-код: все оттенки белого! Особняк Серебряковой, наб. Кутузова, д. 22</label>
+                      <input class="milongs" id="mc6" type="checkbox" name="milongs" value="08 июня №4, 16:00 – Эрнан и Мария. Общая ось, кольгады в близком объятии для танцпола. Уровни BC.">
+                      <label for="mc6">08 июня №4, 16:00 – Эрнан и Мария. Общая ось, кольгады в близком объятии для танцпола. Уровни BC.</label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="mc7" type="checkbox" name="masterClass" value="09 июня №4, 16:00 - 19:00 Вечерняя милонга. Tangomania, ул. Чайковского, д. 26">
-                      <label for="mc7">09 июня №4, 16:00 - 19:00 Вечерняя милонга. Tangomania, ул. Чайковского, д. 26</label>
+                      <input class="milongs" id="mc7" type="checkbox" name="milongs" value="08 июня №5, 16:00 – Нестор и Лиза. Объятие, его эластичность от близкого к открытому для исполнения сложных фигур и интерпретации музыки. Уровни ABС.">
+                      <label for="mc7">08 июня №5, 16:00 – Нестор и Лиза. Объятие, его эластичность от близкого к открытому для исполнения сложных фигур и интерпретации музыки. Уровни ABС.</label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="mc8" type="checkbox" name="masterClass" value="09 июня №5, 21:00 - 01:00 № 5 Солнечный Бал «Milonga Del Sol». DJ Nestor Azorin и оркестр Tango Pasional.  Дворец «Олимпия», Литейный пр. д. 14">
-                      <label for="mc8">09 июня №5, 21:00 - 01:00 № 5 Солнечный Бал «Milonga Del Sol». DJ Nestor Azorin и оркестр Tango Pasional.  Дворец «Олимпия», Литейный пр. д. 14       </label>
+                      <input class="milongs" id="mc8" type="checkbox" name="milongs" value="08 июня №6, 17:30 – Эрнан и Мария. Milonguero стиль. Будем изучать секреты техники близкого объятия, динамичные элементы: ocho milonguero, giro milonguero, rebotes со сменой направления. Уровни АBC.">
+                      <label for="mc8">08 июня №6, 17:30 – Эрнан и Мария. Milonguero стиль. Будем изучать секреты техники близкого объятия, динамичные элементы: ocho milonguero, giro milonguero, rebotes со сменой направления. Уровни АBC.     </label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="mc9" type="checkbox" name="masterClass" value="10 июня №6, 21:30 - 01:00 Милонга Nuevo Argentino, DJ Gustavo Funes. Tangomania, ул. Чайковского, д. 26">
-                      <label for="mc9">10 июня №6, 21:30 - 01:00 Милонга Nuevo Argentino, DJ Gustavo Funes. Tangomania, ул. Чайковского, д. 26</label>
+                      <input class="milongs" id="mc9" type="checkbox" name="milongs" value="08 июня №7, 17:30 – Густаво и Юлия. Комбинации c boleo и ganchos. Использование пространства и внутренней динамики пары. Уровни BC.">
+                      <label for="mc9">08 июня №7, 17:30 – Густаво и Юлия. Комбинации c boleo и ganchos. Использование пространства и внутренней динамики пары. Уровни BC.</label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="mc10" type="checkbox" name="masterClass" value="11 июня №7, 21:00 - 00:30 Праздничная вечеринка Fiesta ко дню рождения Рауля Сантаны! DJ Dana Tangomania, ул. Чайковского, д. 26">
-                      <label for="mc10">11 июня №7, 21:00 - 00:30 Праздничная вечеринка Fiesta ко дню рождения Рауля Сантаны! DJ Dana Tangomania, ул. Чайковского, д. 26</label>
+                      <input class="milongs" id="mc10" type="checkbox" name="milongs" value="08 июня №8, 19:00 – Густаво и Юлия. Фигуры для Танго Нуэво. Сакадас трипле и сольтадас комбинации. Уровни BC.">
+                      <label for="mc10">08 июня №8, 19:00 – Густаво и Юлия. Фигуры для Танго Нуэво. Сакадас трипле и сольтадас комбинации. Уровни BC.</label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="mc11" type="checkbox" name="masterClass" value="11 июня №8, 23:30 - 02:45 (Время может немного измениться) Танго Кораблик, танцуем и разводим мосты над Невой! DJs Kirill &amp; Larisa">
-                      <label for="mc11">11 июня №8, 23:30 - 02:45 (Время может немного измениться) Танго Кораблик, танцуем и разводим мосты над Невой! DJs Kirill & Larisa</label>
+                      <input class="milongs" id="mc11" type="checkbox" name="milongs" value="09 июня №9, 13:00 – Густаво и Юлия. Техника для партнеров и дам. Постура, шаг, очо, хиро. Все уровни. Пара не нужна.">
+                      <label for="mc11">09 июня №9, 13:00 – Густаво и Юлия. Техника для партнеров и дам. Постура, шаг, очо, хиро. Все уровни. Пара не нужна.</label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="mc12" type="checkbox" name="masterClass" value="12 июня №9, 16:00 - 19:00 Tango Open Air.  Оплата Donation">
-                      <label for="mc12">12 июня №9, 16:00 - 19:00 Tango Open Air.  Оплата Donation</label>
+                      <input class="milongs" id="mc12" type="checkbox" name="milongs" value="09 июня №10, 13:00 – Эрнан и Мария. Энроске и калесита. Связь в паре, динамика и украшения для обеих ролей. Уровни BC.">
+                      <label for="mc12">09 июня №10, 13:00 – Эрнан и Мария. Энроске и калесита. Связь в паре, динамика и украшения для обеих ролей. Уровни BC.</label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="mc13" type="checkbox" name="masterClass" value="12 июня №10, 21:00 - 01:00 After Party в Тангомании. Tangomania, ул. Чайковского, д. 26">
-                      <label for="mc13">12 июня №10, 21:00 - 01:00 After Party в Тангомании. Tangomania, ул. Чайковского, д. 26</label>
+                      <input class="milongs" id="mc13" type="checkbox" name="milongs" value="09 июня №11, 14:30 – Рауль и Дана. Байбенес. Ритмические варианты каминаты vaivenes под разные оркестры. Уровни АBC.">
+                      <label for="mc13">09 июня №11, 14:30 – Рауль и Дана. Байбенес. Ритмические варианты каминаты vaivenes под разные оркестры. Уровни АBC.</label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="mc14" type="checkbox" name="masterClass" value="09 июня №11, 14:30 – Рауль и Дана. Байбенес. Ритмические варианты каминаты vaivenes под разные оркестры. Уровни АBC.">
-                      <label for="mc14">09 июня №11, 14:30 – Рауль и Дана. Байбенес. Ритмические варианты каминаты vaivenes под разные оркестры. Уровни АBC.</label>
+                      <input class="masterClass" id="mc14" type="checkbox" name="masterClass" value="09 июня №12, 14:30 – Эрнан и Мария. Танго-Вальс. Прогулки, кружения, фигуры и их комбинации. Уровни BC.">
+                      <label for="mc14">09 июня №12, 14:30 – Эрнан и Мария. Танго-Вальс. Прогулки, кружения, фигуры и их комбинации. Уровни BC.</label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="mc15" type="checkbox" name="masterClass" value="09 июня №12, 14:30 – Эрнан и Мария. Танго-Вальс. Прогулки, кружения, фигуры и их комбинации. Уровни BC.">
-                      <label for="mc15">09 июня №12, 14:30 – Эрнан и Мария. Танго-Вальс. Прогулки, кружения, фигуры и их комбинации. Уровни BC.</label>
+                      <input class="masterClass" id="mc15" type="checkbox" name="masterClass" value="09 июня №13, 16:00 – Рауль и Дана. Мужские и женские сакады для танцпола. Импровизация и креативность на базе системы Giro de 8. Уровни ВС.">
+                      <label for="mc15">09 июня №13, 16:00 – Рауль и Дана. Мужские и женские сакады для танцпола. Импровизация и креативность на базе системы Giro de 8. Уровни ВС.</label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="mc16" type="checkbox" name="masterClass" value="09 июня №13, 16:00 – Рауль и Дана. Мужские и женские сакады для танцпола. Импровизация и креативность на базе системы Giro de 8. Уровни ВС.">
-                      <label for="mc16">09 июня №13, 16:00 – Рауль и Дана. Мужские и женские сакады для танцпола. Импровизация и креативность на базе системы Giro de 8. Уровни ВС.</label>
+                      <input class="masterClass" id="mc16" type="checkbox" name="masterClass" value="09 июня №14, 16:00 – Нестор и Лиза. Милонга, ритмичные смены направления. Добавим сакады с использованием пространства пары. Рассмотрим особенности хиро и контрхиро для милонги. Уровни BC.">
+                      <label for="mc16">09 июня №14, 16:00 – Нестор и Лиза. Милонга, ритмичные смены направления. Добавим сакады с использованием пространства пары. Рассмотрим особенности хиро и контрхиро для милонги. Уровни BC.</label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="mc17" type="checkbox" name="masterClass" value="09 июня №14, 16:00 – Нестор и Лиза. Милонга, ритмичные смены направления. Добавим сакады с использованием пространства пары. Рассмотрим особенности хиро и контрхиро для милонги. Уровни BC.">
-                      <label for="mc17">09 июня №14, 16:00 – Нестор и Лиза. Милонга, ритмичные смены направления. Добавим сакады с использованием пространства пары. Рассмотрим особенности хиро и контрхиро для милонги. Уровни BC.</label>
+                      <input class="masterClass" id="mc17" type="checkbox" name="masterClass" value="10 июня №15, 18:30 – Рауль и Дана. Специальный семинар для диджеев и танцоров. Типологии милонг по времени и специфике. Классификация оркестров по цветам и эмоциям. Полезно как для диджеев, так и для танцоров и слушателей.">
+                      <label for="mc17">10 июня №15, 18:30 – Рауль и Дана. Специальный семинар для диджеев и танцоров. Типологии милонг по времени и специфике. Классификация оркестров по цветам и эмоциям. Полезно как для диджеев, так и для танцоров и слушателей.</label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="mc18" type="checkbox" name="masterClass" value="10 июня №15, 18:30 – Рауль и Дана. Специальный семинар для диджеев и танцоров. Типологии милонг по времени и специфике. Классификация оркестров по цветам и эмоциям. Полезно как для диджеев, так и для танцоров и слушателей.">
-                      <label for="mc18">10 июня №15, 18:30 – Рауль и Дана. Специальный семинар для диджеев и танцоров. Типологии милонг по времени и специфике. Классификация оркестров по цветам и эмоциям. Полезно как для диджеев, так и для танцоров и слушателей.</label>
+                      <input class="masterClass" id="mc18" type="checkbox" name="masterClass" value="10 июня №16, 18:30 – Юлия. Техники танго. Опора и свобода. Постура, шаг, поворот, украшения. Все уровни. Пара не нужна.">
+                      <label for="mc18">10 июня №16, 18:30 – Юлия. Техники танго. Опора и свобода. Постура, шаг, поворот, украшения. Все уровни. Пара не нужна.</label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="mc19" type="checkbox" name="masterClass" value="10 июня №16, 18:30 – Юлия. Техники танго. Опора и свобода. Постура, шаг, поворот, украшения. Все уровни. Пара не нужна.">
-                      <label for="mc19">10 июня №16, 18:30 – Юлия. Техники танго. Опора и свобода. Постура, шаг, поворот, украшения. Все уровни. Пара не нужна.</label>
+                      <input class="masterClass" id="mc19" type="checkbox" name="masterClass" value="10 июня №17, 20:00 – Густаво и Юлия. Стиль Оришеро, апиладо и волькады. Bicicleta и другие игровые элементы. Уровни BC.">
+                      <label for="mc19">10 июня №17, 20:00 – Густаво и Юлия. Стиль Оришеро, апиладо и волькады. Bicicleta и другие игровые элементы. Уровни BC.</label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="mc20" type="checkbox" name="masterClass" value="10 июня №17, 20:00 – Густаво и Юлия. Стиль Оришеро, апиладо и волькады. Bicicleta и другие игровые элементы. Уровни BC.">
-                      <label for="mc20">10 июня №17, 20:00 – Густаво и Юлия. Стиль Оришеро, апиладо и волькады. Bicicleta и другие игровые элементы. Уровни BC.</label>
+                      <input class="masterClass" id="mc20" type="checkbox" name="masterClass" value="10 июня №18*, 20:00 – Нестор и Лиза. Аргентинский фольклор. Уровни АBC. Пара не нужна.">
+                      <label for="mc20">10 июня №18*, 20:00 – Нестор и Лиза. Аргентинский фольклор. Уровни АBC. Пара не нужна.   </label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="mc21" type="checkbox" name="masterClass" value="10 июня №18*, 20:00 – Нестор и Лиза. Аргентинский фольклор. Уровни АBC. Пара не нужна.">
-                      <label for="mc21">10 июня №18*, 20:00 – Нестор и Лиза. Аргентинский фольклор. Уровни АBC. Пара не нужна.   </label>
+                      <input class="masterClass" id="mc21" type="checkbox" name="masterClass" value="11 июня №19*, 18:30 – Нестор и Лиза. Аргентинский рок-н-ролл. Уровни АBC. Пара не нужна.">
+                      <label for="mc21">11 июня №19*, 18:30 – Нестор и Лиза. Аргентинский рок-н-ролл. Уровни АBC. Пара не нужна.</label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="mc22" type="checkbox" name="masterClass" value="11 июня №19*, 18:30 – Нестор и Лиза. Аргентинский рок-н-ролл. Уровни АBC. Пара не нужна.">
-                      <label for="mc22">11 июня №19*, 18:30 – Нестор и Лиза. Аргентинский рок-н-ролл. Уровни АBC. Пара не нужна.</label>
+                      <input class="masterClass" id="mc22" type="checkbox" name="masterClass" value="11 июня №20*, 20:00 – Густаво и Юлия. Танго для начинающих. Все уровни. Пара не нужна.">
+                      <label for="mc22">11 июня №20*, 20:00 – Густаво и Юлия. Танго для начинающих. Все уровни. Пара не нужна.</label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="mc23" type="checkbox" name="masterClass" value="11 июня №20*, 20:00 – Густаво и Юлия. Танго для начинающих. Все уровни. Пара не нужна.">
-                      <label for="mc23">11 июня №20*, 20:00 – Густаво и Юлия. Танго для начинающих. Все уровни. Пара не нужна.</label>
+                      <input class="masterClass" id="mc23" type="checkbox" name="masterClass" value="12 июня №21, 13:00 – Дана. Женские техники. Секреты устойчивости и украшений. Все уровни. Пара не нужна.">
+                      <label for="mc23">12 июня №21, 13:00 – Дана. Женские техники. Секреты устойчивости и украшений. Все уровни. Пара не нужна.</label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="mc24" type="checkbox" name="masterClass" value="12 июня №21, 13:00 – Дана. Женские техники. Секреты устойчивости и украшений. Все уровни. Пара не нужна.">
-                      <label for="mc24">12 июня №21, 13:00 – Дана. Женские техники. Секреты устойчивости и украшений. Все уровни. Пара не нужна.</label>
+                      <input class="masterClass" id="mc24" type="checkbox" name="masterClass" value="12 июня №22, 14:30 – Эрнан и Мария. Танго эсценарио. Фигуры и связки для выступлений и полезные идеи для сценической хореографии. Уровни BC.">
+                      <label for="mc24">12 июня №22, 14:30 – Эрнан и Мария. Танго эсценарио. Фигуры и связки для выступлений и полезные идеи для сценической хореографии. Уровни BC.</label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="mc25" type="checkbox" name="masterClass" value="12 июня №22, 14:30 – Эрнан и Мария. Танго эсценарио. Фигуры и связки для выступлений и полезные идеи для сценической хореографии. Уровни BC.">
-                      <label for="mc25">12 июня №22, 14:30 – Эрнан и Мария. Танго эсценарио. Фигуры и связки для выступлений и полезные идеи для сценической хореографии. Уровни BC.</label>
+                      <input class="masterClass" id="mc25" type="checkbox" name="masterClass" value="12 июня №23, 16:00 – Нестор и Лиза. Вариасьон, финальная часть композиции мелодии. Как станцевать ярко, динамично, музыкально. Для милонги и шоу. Под ритмичные и драматичные оркестры. Уровни BC.">
+                      <label for="mc25">12 июня №23, 16:00 – Нестор и Лиза. Вариасьон, финальная часть композиции мелодии. Как станцевать ярко, динамично, музыкально. Для милонги и шоу. Под ритмичные и драматичные оркестры. Уровни BC.</label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="mc26" type="checkbox" name="masterClass" value="12 июня №23, 16:00 – Нестор и Лиза. Вариасьон, финальная часть композиции мелодии. Как станцевать ярко, динамично, музыкально. Для милонги и шоу. Под ритмичные и драматичные оркестры. Уровни BC.">
-                      <label for="mc26">12 июня №23, 16:00 – Нестор и Лиза. Вариасьон, финальная часть композиции мелодии. Как станцевать ярко, динамично, музыкально. Для милонги и шоу. Под ритмичные и драматичные оркестры. Уровни BC.</label>
+                      <input class="masterClass" id="mc26" type="checkbox" name="masterClass" value="12 июня №24*, 17:30 Мой первый урок танго. Азбука Танго. Традиция, объятие, музыка и шаги. Уровень 0А. Пара не нужна.">
+                      <label for="mc26">12 июня №24*, 17:30 Мой первый урок танго. Азбука Танго. Традиция, объятие, музыка и шаги. Уровень 0А. Пара не нужна.</label>
                     </div>
-                    <div class="row">
-                      <input class="masterClass" id="mc27" type="checkbox" name="masterClass" value="12 июня №24*, 17:30 Мой первый урок танго. Азбука Танго. Традиция, объятие, музыка и шаги. Уровень 0А. Пара не нужна.">
-                      <label for="mc27">12 июня №24*, 17:30 Мой первый урок танго. Азбука Танго. Традиция, объятие, музыка и шаги. Уровень 0А. Пара не нужна.</label>
-                    </div>
-                    <div class="row">
-                      <input class="masterClass" id="otherMc" type="checkbox" name="masterClass" value="12 июня №23, 16:00 – Нестор и Лиза. Вариасьон, финальная часть композиции мелодии. Как станцевать ярко, динамично, музыкально. Для милонги и шоу. Под ритмичные и драматичные оркестры. Уровни BC.">
-                      <label for="mc28">Другое</label>
+                    <div class="row otherInputRow">
+                      <div class="el">
+                        <input class="masterClass" id="otherMc" type="checkbox" name="masterClass" value="Другое">
+                        <label for="mc28">Другое</label>
+                      </div>
                       <input class="masterClass" id="mc28" type="text" name="masterClass" placeholder="Введите название мастер-класса или урока">
                     </div>
                   </div>
@@ -372,9 +376,11 @@
                       <input class="milongs" id="t9" type="checkbox" name="milongs" value="1 500 руб. место за столиком для зрителей на Турнире фестиваля White Nights Tango CUP  12 июня в Олимпии">
                       <label for="t9">1 500 руб. место за столиком для зрителей на Турнире фестиваля White Nights Tango CUP  12 июня в Олимпии</label>
                     </div>
-                    <div class="row">
-                      <input class="masterClass" id="otherMc" type="checkbox" name="masterClass" value="12 июня №23, 16:00 – Нестор и Лиза. Вариасьон, финальная часть композиции мелодии. Как станцевать ярко, динамично, музыкально. Для милонги и шоу. Под ритмичные и драматичные оркестры. Уровни BC.">
-                      <label for="t10">Другое</label>
+                    <div class="row otherInputRow">
+                      <div class="el">
+                        <input class="masterClass" id="otherMc" type="checkbox" name="masterClass" value="Другое">
+                        <label for="t10">Другое</label>
+                      </div>
                       <input class="masterClass" id="t10" type="text" name="masterClass" placeholder="Введите название мастер-класса или урока">
                     </div>
                   </div>
@@ -399,9 +405,11 @@
                       <input class="ticket" id="tk4" type="checkbox" name="ticket" value="Пакет «Weekend pass»: 6  мастер-классов основной программы и 3 Гранд-милонги 7-9 июня =10 000 руб./11 500 руб.">
                       <label for="tk4">Пакет «Weekend pass»: 6  мастер-классов основной программы и 3 Гранд-милонги 7-9 июня =10 000 руб./11 500 руб.            </label>
                     </div>
-                    <div class="row">
-                      <input class="ticket" id="otherTk" type="checkbox" name="ticket" value="12 июня №23, 16:00 – Нестор и Лиза. Вариасьон, финальная часть композиции мелодии. Как станцевать ярко, динамично, музыкально. Для милонги и шоу. Под ритмичные и драматичные оркестры. Уровни BC.">
-                      <label for="tk5">Другое</label>
+                    <div class="row otherInputRow">
+                      <div class="el">
+                        <input class="ticket" id="otherTk" type="checkbox" name="ticket" value="Другое">
+                        <label for="tk5">Другое</label>
+                      </div>
                       <input class="ticket" id="tk5" type="text" name="ticket" placeholder="Введите Ваш вариант">
                     </div>
                     <div class="row">
@@ -462,13 +470,15 @@
                       <input class="lessions" id="l12" type="checkbox" name="lessions" value="Урок танго с преподавателями Тангомании (3000 руб.)">
                       <label for="l12">Урок танго с преподавателями Тангомании (3000 руб.)</label>
                     </div>
-                    <div class="row">
-                      <input class="lessions" id="otherMc" type="checkbox" name="lessions" value="Другое:">
-                      <label for="l13">Другое</label>
+                    <div class="row otherInputRow">
+                      <div class="el">
+                        <input class="lessions" id="otherMc" type="checkbox" name="lessions" value="Другое:">
+                        <label for="l13">Другое</label>
+                      </div>
                       <input class="lessions" id="l13" type="text" name="lessions" placeholder="Введите Ваш вариант">
                     </div>
                     <div class="column">
-                      <label for="lessonDate">Желаемая дата и время индивидуального занятия</label>
+                      <label for="lessonDate">Желаемая дата и время индивидуального занятия<br></label>
                       <input class="lessions" id="lessonDate" type="text" name="lessions" placeholder="Введите дату и время">
                     </div>
                   </div>
@@ -493,9 +503,11 @@
                       <input class="payment" id="kassa" type="radio" name="payment" value="Я-касса">
                       <label for="kassa">Я-касса          </label>
                     </div>
-                    <div class="row">
-                      <input class="payment" id="other" type="radio" name="payment" value="Другое">
-                      <label for="mc28">Другое</label>
+                    <div class="row otherInputRow">
+                      <div class="el">
+                        <input class="payment" id="other" type="radio" name="payment" value="Другое">
+                        <label for="mc28">Другое</label>
+                      </div>
                       <input class="payment" id="other" type="text" name="payment" placeholder="Введите Ваш вариант">
                     </div>
                   </div>

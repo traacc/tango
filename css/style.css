@@ -1988,9 +1988,7 @@ button.btn {
 
 .locations .locations__inner .locations__main {
   padding: 0em 1.9em;
-  -webkit-box-shadow: 1px 1px 15px 0px #696969;
-  box-shadow: 1px 1px 15px 0px #696969;
-  border-radius: 12px;
+  background-color: #fff;
 }
 
 .locations .locations__inner .locations__main .locations__item {
@@ -2248,6 +2246,8 @@ button.btn {
   box-shadow: 1px 1px 15px 0px #696969;
   width: 590px;
   height: 340px;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .price .desc {
@@ -2262,6 +2262,48 @@ button.btn {
 
 .price .price__block ul {
   padding-left: 1em;
+}
+
+.price .price__block.special .price__blockContext,
+.price .price__block.indPack .price__blockContext {
+  display: none;
+}
+
+.price .price__block .price__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.price .price__block .price__header .toggleBtn {
+  background-color: #825171;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.price .price__block.active .price__blockContext {
+  display: block;
+}
+
+.price .price__block.active .price__header .toggleBtn img {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .price .price__block .subTitleBlock {
@@ -2536,7 +2578,7 @@ form.regForm__main input[type=checkbox] {
   -moz-appearance: none;
   appearance: none;
   width: 20px;
-  aspect-ratio: 1;
+  height: 20px;
   border: 2px solid #18161D;
   background-image: url(../img/svg/mark.svg);
   background-repeat: no-repeat;
@@ -2567,7 +2609,7 @@ form.regForm__main input[type=radio] {
   -moz-appearance: none;
   appearance: none;
   width: 20px;
-  aspect-ratio: 1;
+  height: 20px;
   border: 2px solid #18161D;
   border-radius: 100%;
   position: relative;
@@ -2581,7 +2623,7 @@ form.regForm__main input[type=radio]:checked::after {
   content: "";
   position: absolute;
   width: 10px;
-  aspect-ratio: 1;
+  height: 10px;
   background-color: #790000;
   left: 3px;
   top: 3px;
@@ -2642,9 +2684,26 @@ form.regForm__main .row {
   column-gap: 1em;
 }
 
+form.regForm__main .row #tkCount {
+  width: 60px;
+  text-align: center;
+}
+
 form.regForm__main .row input {
   -ms-flex-negative: 0;
   flex-shrink: 0;
+}
+
+form.regForm__main .row.otherInputRow .el {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1em;
+  -moz-column-gap: 1em;
+  column-gap: 1em;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 form.regForm__main .regForm__main {
@@ -2795,7 +2854,7 @@ table td {
     padding-right: 10px;
   }
 
-  .container {
+  .header .container {
     padding: 0;
   }
 
@@ -2842,6 +2901,7 @@ table td {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 2em;
   }
 
   .footer .footer__inner .footer__content .footer__column:first-child {
@@ -2889,9 +2949,24 @@ table td {
     grid-template-columns: 1fr;
   }
 
+  .events .events__inner .events__list .btn:nth-child(2),
+  .events .events__inner .events__list .btn:nth-child(4),
+  .events .events__inner .events__list .btn:nth-child(5),
+  .events .events__inner .events__list .btn:nth-child(7) {
+    color: #000;
+  }
+
+  .events .events__inner .events__list .btn:nth-child(even) {
+    color: #825171;
+  }
+
   .maestros .maestros__inner .maestros__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+
+  .maestros .maestros__inner .maestros__list li {
+    margin-top: 2em;
   }
 
   .maestros .maestros__inner .maestros__list li img {
@@ -2902,6 +2977,10 @@ table td {
   .djs .djs__inner .djs__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+
+  .djs .djs__inner .djs__list li {
+    margin-top: 2em;
   }
 
   .djs .djs__inner .djs__list li img {
@@ -2938,6 +3017,8 @@ table td {
 
   .locations .locations__inner .locations__main .locations__item .locations__pic {
     width: 100%;
+    -webkit-box-shadow: 1px 1px 15px 0px #696969;
+    box-shadow: 1px 1px 15px 0px #696969;
   }
 
   .midImg .midImg__inner .midImg__img img:first-child,
@@ -2955,6 +3036,10 @@ table td {
   .miloga .miloga__inner .miloga__pics {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+
+  section.concertHeader .concertHeader__inner .descLine h2 {
+    font-size: 18px;
   }
 
   .picLine {
@@ -2995,6 +3080,13 @@ table td {
 
   section.concertBlock.gala .concertBlock__inner h2.section__title {
     font-size: 24px;
+  }
+
+  section.concertBlock.location .picTextBlock {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 
   section.perfomance .perfomance__inner .perfomance__list {
@@ -3059,9 +3151,42 @@ table td {
     flex-direction: column;
   }
 
+  form.regForm__main .regForm__main .levelField .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+  }
+
+  form.regForm__main .regForm__main .levelField .row .el {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-column-gap: 1em;
+    -moz-column-gap: 1em;
+    column-gap: 1em;
+  }
+
   form.regForm__main h2.section__title {
     font-size: 18px;
     text-align: left;
+  }
+
+  form.regForm__main .row.otherInputRow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    row-gap: 0.5em;
   }
 
   html {
