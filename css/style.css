@@ -3033,6 +3033,7 @@ table td {
   .maestros .maestros__inner .maestros__list li img {
     width: 285px;
     margin: 0 auto;
+    margin-bottom: 1em;
   }
 
   .djs .djs__inner .djs__list {
@@ -3047,6 +3048,7 @@ table td {
   .djs .djs__inner .djs__list li img {
     width: 285px;
     margin: 0 auto;
+    margin-bottom: 1em;
   }
 
   .orchestra .orchestra__main {
