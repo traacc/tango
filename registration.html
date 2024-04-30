@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <div class="modalOverlay"></div>
+    <div class="modalWindow"> 
+      <div class="modalWindow__header"> 
+        <h2 class="section__title"> </h2>
+        <div class="closeBtn"><img src="img/svg/closeBtn.svg" alt="">
+        </div>
+      </div>
+      <div class="modalWindow__text"> </div>
+    </div>
     <div class="wrapper">
       <header class="header">
         <div class="container">
@@ -35,7 +44,10 @@
               <h2 class="section__title">Регистрация на XXII Фестиваль «Танго Белых Ночей»</h2>
               <div class="regDesc__text"> 
                 <p>С радостью приглашаем Вас на XXII Традиционный Международный Фестиваль «ТАНГО БЕЛЫХ НОЧЕЙ» с 07-12 июня 2024 года в Санкт-Петербурге!Встреча танго друзей в Петербурге.  6 дней, наполненные радостью встреч, магией танго и очарованием летнего Петербурга. В программе милонги, балы, мастер-классы, дополнительные уроки, лекция, концерт, конкурс, экскурсии, танго-кораблик и опенэйры.</p>
-                <p>Маэстро фестиваля: Gustavo Funes и Юлия Зуева, Hernán Brusa и Мария Бруса, Raúl Santana и Dana Sakimova, Nestor Azorin и Елизавета Тавровская DJs: Эрнан Бруса, Рауль Сантана, Дана Сакимова, Нестор Азорин, Густаво Фунес, Кирилл Рябков, Лариса Рогушкина Оркестр: Tango Pasional Уникальные локации фестиваля: Тангомания на улице Чайковского, Дворец Серебряковой на набережной Кутузова, Дворец Олимпия - Особняк Долгоруковой на Литейном проспекте.</p>
+                <p><b>Маэстро фестиваля:</b> Gustavo Funes и Юлия Зуева, Hernán Brusa и Мария Бруса, Raúl Santana и Dana Sakimova, Nestor Azorin и Елизавета Тавровская </p>
+                <p><b>DJs:</b> Эрнан Бруса, Рауль Сантана, Дана Сакимова, Нестор Азорин, Густаво Фунес, Кирилл Рябков, Лариса Рогушкина </p>
+                <p><b>Оркестр:</b> Tango Pasional </p>
+                <p><b>Уникальные локации фестиваля:</b> Тангомания на улице Чайковского, Дворец Серебряковой на набережной Кутузова, Дворец Олимпия - Особняк Долгоруковой на Литейном проспекте.</p>
                 <p>Для регистрации на фестиваль, пожалуйста, заполните следующую форму.До скорой встречи на ТБН-2024!    С наилучшими пожеланиями, Оргкомитет Фестиваля</p>
               </div>
             </div>
@@ -203,55 +215,55 @@
                   </div>
                   <div class="list">
                     <div class="row">
-                      <input class="masterClass" id="m1" type="checkbox" name="masterClass" value="Пакет «Milonga pass»: все вечерние и ночные милонги 7-12 июня = 5000 руб./6000 руб. (не включает Танго Кораблик и Танго Концерт)">
+                      <input class="masterClass" id="mc1" type="checkbox" name="masterClass" value="Пакет «Milonga pass»: все вечерние и ночные милонги 7-12 июня = 5000 руб./6000 руб. (не включает Танго Кораблик и Танго Концерт)">
                       <label for="mc1">Пакет «Milonga pass»: все вечерние и ночные милонги 7-12 июня = 5000 руб./6000 руб. (не включает Танго Кораблик и Танго Концерт)</label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="m2" type="checkbox" name="masterClass" value="Пакет «WNT pass» для пар:  мастер-классы+уроки+лекция+милонги+экскурсии = 18 500 руб./19500 руб. с человека при одновременной регистрации и оплате парой участников (не включает Танго Кораблик и Танго Концерт)">
+                      <input class="masterClass" id="mc2" type="checkbox" name="masterClass" value="Пакет «WNT pass» для пар:  мастер-классы+уроки+лекция+милонги+экскурсии = 18 500 руб./19500 руб. с человека при одновременной регистрации и оплате парой участников (не включает Танго Кораблик и Танго Концерт)">
                       <label for="mc2">Пакет «WNT pass» для пар:  мастер-классы+уроки+лекция+милонги+экскурсии = 18 500 руб./19500 руб. с человека при одновременной регистрации и оплате парой участников (не включает Танго Кораблик и Танго Концерт)</label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="m3" type="checkbox" name="masterClass" value="Пакет «Weekend pass»: 6  мастер-классов основной программы и 3 Гранд-милонги 7-9 июня = 10 000 руб./11 500 руб.">
+                      <input class="masterClass" id="mc3" type="checkbox" name="masterClass" value="Пакет «Weekend pass»: 6  мастер-классов основной программы и 3 Гранд-милонги 7-9 июня = 10 000 руб./11 500 руб.">
                       <label for="mc3">Пакет «Weekend pass»: 6  мастер-классов основной программы и 3 Гранд-милонги 7-9 июня = 10 000 руб./11 500 руб.</label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="m4" type="checkbox" name="masterClass" value="07 июня №1, 21:00 - 03:00  Торжественный Бал «Танго Белых Ночей». Празднуем Открытие фестиваля и день рождения Юлии Зуевой. DJ Hernan Brusa. Шоу маэстро фестиваля. Особняк Серебряковой, наб. Кутузова, д. 22">
+                      <input class="masterClass" id="mc4" type="checkbox" name="masterClass" value="07 июня №1, 21:00 - 03:00  Торжественный Бал «Танго Белых Ночей». Празднуем Открытие фестиваля и день рождения Юлии Зуевой. DJ Hernan Brusa. Шоу маэстро фестиваля. Особняк Серебряковой, наб. Кутузова, д. 22">
                       <label for="mc4">07 июня №1, 21:00 - 03:00  Торжественный Бал «Танго Белых Ночей». Празднуем Открытие фестиваля и день рождения Юлии Зуевой. DJ Hernan Brusa. Шоу маэстро фестиваля. Особняк Серебряковой, наб. Кутузова, д. 22</label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="m5" type="checkbox" name="masterClass" value="08 июня №2, 16:00 - 19:00 Tango Open Air. Оплата Donation">
+                      <input class="masterClass" id="mc5" type="checkbox" name="masterClass" value="08 июня №2, 16:00 - 19:00 Tango Open Air. Оплата Donation">
                       <label for="mc5">08 июня №2, 16:00 - 19:00 Tango Open Air. Оплата Donation</label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="m6" type="checkbox" name="masterClass" value="08 июня №3, 21:00 - 03:00 Белый Бал «Noche Blanca». DJ Raul Santana. Шоу маэстро фестиваля. Дресс-код: все оттенки белого! Особняк Серебряковой, наб. Кутузова, д. 22">
+                      <input class="masterClass" id="mc6" type="checkbox" name="masterClass" value="08 июня №3, 21:00 - 03:00 Белый Бал «Noche Blanca». DJ Raul Santana. Шоу маэстро фестиваля. Дресс-код: все оттенки белого! Особняк Серебряковой, наб. Кутузова, д. 22">
                       <label for="mc6">08 июня №3, 21:00 - 03:00 Белый Бал «Noche Blanca». DJ Raul Santana. Шоу маэстро фестиваля. Дресс-код: все оттенки белого! Особняк Серебряковой, наб. Кутузова, д. 22</label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="m7" type="checkbox" name="masterClass" value="09 июня №4, 16:00 - 19:00 Вечерняя милонга. Tangomania, ул. Чайковского, д. 26">
+                      <input class="masterClass" id="mc7" type="checkbox" name="masterClass" value="09 июня №4, 16:00 - 19:00 Вечерняя милонга. Tangomania, ул. Чайковского, д. 26">
                       <label for="mc7">09 июня №4, 16:00 - 19:00 Вечерняя милонга. Tangomania, ул. Чайковского, д. 26</label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="m8" type="checkbox" name="masterClass" value="09 июня №5, 21:00 - 01:00 № 5 Солнечный Бал «Milonga Del Sol». DJ Nestor Azorin и оркестр Tango Pasional.  Дворец «Олимпия», Литейный пр. д. 14">
+                      <input class="masterClass" id="mc8" type="checkbox" name="masterClass" value="09 июня №5, 21:00 - 01:00 № 5 Солнечный Бал «Milonga Del Sol». DJ Nestor Azorin и оркестр Tango Pasional.  Дворец «Олимпия», Литейный пр. д. 14">
                       <label for="mc8">09 июня №5, 21:00 - 01:00 № 5 Солнечный Бал «Milonga Del Sol». DJ Nestor Azorin и оркестр Tango Pasional.  Дворец «Олимпия», Литейный пр. д. 14       </label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="m9" type="checkbox" name="masterClass" value="10 июня №6, 21:30 - 01:00 Милонга Nuevo Argentino, DJ Gustavo Funes. Tangomania, ул. Чайковского, д. 26">
+                      <input class="masterClass" id="mc9" type="checkbox" name="masterClass" value="10 июня №6, 21:30 - 01:00 Милонга Nuevo Argentino, DJ Gustavo Funes. Tangomania, ул. Чайковского, д. 26">
                       <label for="mc9">10 июня №6, 21:30 - 01:00 Милонга Nuevo Argentino, DJ Gustavo Funes. Tangomania, ул. Чайковского, д. 26</label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="m10" type="checkbox" name="masterClass" value="11 июня №7, 21:00 - 00:30 Праздничная вечеринка Fiesta ко дню рождения Рауля Сантаны! DJ Dana Tangomania, ул. Чайковского, д. 26">
+                      <input class="masterClass" id="mc10" type="checkbox" name="masterClass" value="11 июня №7, 21:00 - 00:30 Праздничная вечеринка Fiesta ко дню рождения Рауля Сантаны! DJ Dana Tangomania, ул. Чайковского, д. 26">
                       <label for="mc10">11 июня №7, 21:00 - 00:30 Праздничная вечеринка Fiesta ко дню рождения Рауля Сантаны! DJ Dana Tangomania, ул. Чайковского, д. 26</label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="m11" type="checkbox" name="masterClass" value="11 июня №8, 23:30 - 02:45 (Время может немного измениться) Танго Кораблик, танцуем и разводим мосты над Невой! DJs Kirill &amp; Larisa">
+                      <input class="masterClass" id="mc11" type="checkbox" name="masterClass" value="11 июня №8, 23:30 - 02:45 (Время может немного измениться) Танго Кораблик, танцуем и разводим мосты над Невой! DJs Kirill &amp; Larisa">
                       <label for="mc11">11 июня №8, 23:30 - 02:45 (Время может немного измениться) Танго Кораблик, танцуем и разводим мосты над Невой! DJs Kirill & Larisa</label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="m12" type="checkbox" name="masterClass" value="12 июня №9, 16:00 - 19:00 Tango Open Air.  Оплата Donation">
+                      <input class="masterClass" id="mc12" type="checkbox" name="masterClass" value="12 июня №9, 16:00 - 19:00 Tango Open Air.  Оплата Donation">
                       <label for="mc12">12 июня №9, 16:00 - 19:00 Tango Open Air.  Оплата Donation</label>
                     </div>
                     <div class="row">
-                      <input class="masterClass" id="m13" type="checkbox" name="masterClass" value="12 июня №10, 21:00 - 01:00 After Party в Тангомании. Tangomania, ул. Чайковского, д. 26">
+                      <input class="masterClass" id="mc13" type="checkbox" name="masterClass" value="12 июня №10, 21:00 - 01:00 After Party в Тангомании. Tangomania, ул. Чайковского, д. 26">
                       <label for="mc13">12 июня №10, 21:00 - 01:00 After Party в Тангомании. Tangomania, ул. Чайковского, д. 26</label>
                     </div>
                     <div class="row">
