@@ -434,7 +434,7 @@ html {
   font-size: 16px;
   line-height: 24px;
   font-family: "Inter", "Arial", sans-serif;
-  color: #000000;
+  color: #18161D;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -447,7 +447,7 @@ body {
 }
 
 a {
-  color: #000000;
+  color: #18161D;
   text-decoration: none;
 }
 
@@ -465,7 +465,7 @@ textarea {
 input:-webkit-autofill {
   -webkit-box-shadow: inset 0 0 0 1000px #ffffff;
   box-shadow: inset 0 0 0 1000px #ffffff;
-  -webkit-text-fill-color: #000000;
+  -webkit-text-fill-color: #18161D;
 }
 
 input,
@@ -710,6 +710,7 @@ button.btn {
   -webkit-column-gap: 3em;
   -moz-column-gap: 3em;
   column-gap: 3em;
+  font-weight: 600;
 }
 
 .footer .footer__inner .footer__content {
@@ -788,6 +789,7 @@ button.btn {
   -webkit-column-gap: 2em;
   -moz-column-gap: 2em;
   column-gap: 2em;
+  padding-top: 1em;
 }
 
 .modal {
@@ -806,7 +808,7 @@ button.btn {
   flex-direction: column;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(24, 22, 29, 0.8);
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
   visibility: hidden;
@@ -1900,7 +1902,7 @@ button.btn {
   -webkit-box-shadow: 1px 1px 15px 0px #696969;
   box-shadow: 1px 1px 15px 0px #696969;
   width: 100%;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
 .djs {
@@ -1932,7 +1934,7 @@ button.btn {
   -webkit-box-shadow: 1px 1px 15px 0px #696969;
   box-shadow: 1px 1px 15px 0px #696969;
   width: 100%;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
 .orchestra {
@@ -2038,6 +2040,10 @@ button.btn {
   margin: 0 auto;
 }
 
+.midImg {
+  padding-bottom: 4em;
+}
+
 .midImg .midImg__inner {
   position: relative;
 }
@@ -2051,8 +2057,8 @@ button.btn {
 .midImg .midImg__inner .midImg__img img:first-child {
   position: absolute;
   z-index: 1;
-  -webkit-filter: blur(32px);
-  filter: blur(32px);
+  -webkit-filter: blur(6px);
+  filter: blur(6px);
 }
 
 .midImg .midImg__inner .midImg__img img:nth-child(2) {
@@ -2063,8 +2069,8 @@ button.btn {
   position: absolute;
   z-index: 1;
   right: 0;
-  -webkit-filter: blur(32px);
-  filter: blur(32px);
+  -webkit-filter: blur(6px);
+  filter: blur(6px);
 }
 
 .program__item {
@@ -2356,9 +2362,9 @@ button.btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 1em;
-  -moz-column-gap: 1em;
-  column-gap: 1em;
+  -webkit-column-gap: 2.5em;
+  -moz-column-gap: 2.5em;
+  column-gap: 2.5em;
 }
 
 section.concertHeader {
@@ -2496,6 +2502,9 @@ section.tornamentPlace .tornamentPlace__inner {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-column-gap: 2.5em;
+  -moz-column-gap: 2.5em;
+  column-gap: 2.5em;
 }
 
 section.tornamentPlace .tornamentPlace__inner h2 {
@@ -2706,6 +2715,34 @@ form.regForm__main .row.otherInputRow .el {
   align-items: center;
 }
 
+form.regForm__main .row.otherInputRow input[type=text] {
+  width: 400px;
+}
+
+form.regForm__main .row a {
+  text-decoration: underline;
+}
+
+form.regForm__main textarea {
+  padding: 1em;
+}
+
+form.regForm__main textarea::-webkit-input-placeholder {
+  color: #707070;
+}
+
+form.regForm__main textarea::-moz-placeholder {
+  color: #707070;
+}
+
+form.regForm__main textarea::-ms-input-placeholder {
+  color: #707070;
+}
+
+form.regForm__main textarea::placeholder {
+  color: #707070;
+}
+
 form.regForm__main .regForm__main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2734,6 +2771,24 @@ form.regForm__main .regForm__main .inputEl.levelField {
   margin-bottom: 2em;
 }
 
+form.regForm__main .regForm__main .inputEl.levelField .row {
+  -webkit-column-gap: 1.4em;
+  -moz-column-gap: 1.4em;
+  column-gap: 1.4em;
+}
+
+form.regForm__main .regForm__main .inputEl.levelField .el {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-column-gap: 1em;
+  -moz-column-gap: 1em;
+  column-gap: 1em;
+}
+
 form.regForm__main .regForm__main .row {
   margin-bottom: 0;
 }
@@ -2758,6 +2813,10 @@ form.regForm__main button.btn.sendReg {
   padding: 20px;
   font-weight: 600;
   cursor: pointer;
+}
+
+form.regForm__main .regForm__block.footer a {
+  text-decoration: underline;
 }
 
 /* @mixin hover-focus {
@@ -3187,6 +3246,10 @@ table td {
     -ms-flex-align: start;
     align-items: start;
     row-gap: 0.5em;
+  }
+
+  form.regForm__main .row.otherInputRow input[type=text] {
+    width: 100%;
   }
 
   html {

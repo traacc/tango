@@ -22,20 +22,20 @@
       <header class="header">
         <div class="container">
           <div class="header__main">
-            <div class="header__pic"><a href="/">
+            <div class="header__pic"><a href="/tango">
                 <!--img(src="img/" + path + "/" + image + "." + format, srcset= "img/" + path + "/" + image + "@2x." + format + " 2x", width= width, height= height, alt= altText)--><img src="img/content/headerImg.jpg" srcset="img/content/headerImg.jpg" width=""></a></div>
-            <nav class="nav">
-              <ul class="nav__list">
-                <li class="nav__item"><a class="nav__link" href="./registration.html">Регистрация</a>
-                </li>
-                <li class="nav__item"><a class="nav__link" href="./concert.html">Концерт</a>
-                </li>
-                <li class="nav__item"><a class="nav__link" href="./tornament.html">Турнир</a>
-                </li>
-              </ul>
-            </nav>
           </div>
         </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="./registration.html">Регистрация</a>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="./concert.html">Концерт</a>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="./tornament.html">Турнир</a>
+            </li>
+          </ul>
+        </nav>
       </header>
       <main>
         <section class="regDesc"> 
@@ -48,7 +48,10 @@
                 <p><b>DJs:</b> Эрнан Бруса, Рауль Сантана, Дана Сакимова, Нестор Азорин, Густаво Фунес, Кирилл Рябков, Лариса Рогушкина </p>
                 <p><b>Оркестр:</b> Tango Pasional </p>
                 <p><b>Уникальные локации фестиваля:</b> Тангомания на улице Чайковского, Дворец Серебряковой на набережной Кутузова, Дворец Олимпия - Особняк Долгоруковой на Литейном проспекте.</p>
-                <p>Для регистрации на фестиваль, пожалуйста, заполните следующую форму.До скорой встречи на ТБН-2024!    С наилучшими пожеланиями, Оргкомитет Фестиваля</p>
+                <p>Для регистрации на фестиваль, пожалуйста, заполните следующую форму.</p>
+                <p>До скорой встречи на ТБН-2024!</p>
+                <p><i>С наилучшими пожеланиями,</i></p>
+                <p><i>Оргкомитет Фестиваля</i></p>
               </div>
             </div>
           </div>
@@ -63,48 +66,48 @@
                     <div class="column">
                       <div class="inputEl">
                         <label for="email">Электронная почта<span class="redMark">*</span></label>
-                        <input class="email" id="email" type="email" name="email" placeholder="Ваш адрес эл. почты">
+                        <input class="email" id="email" type="email" name="email" placeholder="Ваш адрес эл. почты" required>
                       </div>
                       <div class="inputEl">
                         <label for="name">Фамилия, имя, отчество<span class="redMark">*</span></label>
-                        <input class="name" id="name" type="text" name="name" placeholder="Ваши ФИО">
+                        <input class="name" id="name" type="text" name="name" placeholder="Ваши ФИО" required>
                       </div>
                       <div class="inputEl genderField">
                         <label for="name">Пол<span class="redMark">*</span></label>
                         <div class="row"> 
-                          <input class="genderMale" id="maleGender" type="radio" name="gender" value="m">
+                          <input class="genderMale" id="maleGender" type="radio" name="gender" value="m" required>
                           <label for="maleGender">Мужской</label>
-                          <input class="genderfemale" id="femaleGender" type="radio" name="gender" value="f">
+                          <input class="genderfemale" id="femaleGender" type="radio" name="gender" value="f" required>
                           <label for="femaleGender">Женский</label>
                         </div>
                       </div>
                       <div class="inputEl">
                         <label for="email">Страна<span class="redMark">*</span></label>
-                        <input class="country" id="country" type="text" name="country" placeholder="Ваша страна">
+                        <input class="country" id="country" type="text" name="country" placeholder="Ваша страна" required>
                       </div>
                       <div class="inputEl">
                         <label for="name">Город<span class="redMark">*</span></label>
-                        <input class="city" id="city" type="text" name="city" placeholder="Ваш город">
+                        <input class="city" id="city" type="text" name="city" placeholder="Ваш город" required>
                       </div>
                     </div>
                     <div class="column">
                       <div class="inputEl">
                         <label for="phone">Контактный телефон<span class="redMark">*</span></label>
-                        <input class="phone" id="phone" type="tel" name="phone" placeholder="Ваш номер телефона">
+                        <input class="phone" id="phone" type="tel" name="phone" placeholder="Ваш номер телефона" required>
                       </div>
                       <div class="inputEl levelField">
                         <label for="level">Ваш уровень<span class="redMark">*</span></label>
                         <div class="row">
                           <div class="el">
-                            <input class="beginerLevel" id="beginerLevel" type="radio" name="level" value="b">
+                            <input class="beginerLevel" id="beginerLevel" type="radio" name="level" value="b" required>
                             <label for="beginerLevel">Начинающий</label>
                           </div>
                           <div class="el">
-                            <input class="middleLevel" id="middleLevel" type="radio" name="level" value="m">
+                            <input class="middleLevel" id="middleLevel" type="radio" name="level" value="m" required>
                             <label for="middleLevel">Средний</label>
                           </div>
                           <div class="el">
-                            <input class="advLevel" id="advLevel" type="radio" name="level" value="a">
+                            <input class="advLevel" id="advLevel" type="radio" name="level" value="a" required>
                             <label for="advLevel">Продвинутый</label>
                           </div>
                         </div>
@@ -136,7 +139,7 @@
                 </div>
                 <div class="regForm__block special">
                   <h2 class="section__title">2. Выберите подходящие для вас спецпредложения*</h2>
-                  <div class="note">(*) Срок действия предложений ограничен. Спец. предложения не суммируются с другими мероприятиями для расчета % скидки.<b>Стоимость пакетов указана на 1 человека.</b></div>
+                  <div class="note">(*) Срок действия предложений ограничен. Спец. предложения не суммируются с другими мероприятиями для расчета % скидки.<br><b>Стоимость пакетов указана на 1 человека.</b></div>
                   <div class="list">
                     <div class="row">
                       <input class="special" id="s1" type="checkbox" name="special" value="Скидка 20% для пар при одновременной регистрации и оплате парой участников (не распространяется на Пакеты «Milonga pass», «WNT pass», «Weekend pass» и Танго Концерт)">
@@ -230,7 +233,7 @@
                     </div>
                     <div class="row">
                       <input class="milongs" id="mc3" type="checkbox" name="milongs" value="08 июня №1, 13:0000 – Рауль и Дана. Индивидуальная техника для обеих ролей. Рассмотрим особый подход к диссоциации и ведению/ответу, а также как использовать спину в качестве мотора комфортных вращений. Все уровни. Пара не нужна.">
-                      <label for="mc3">08 июня №1, 13:0000 – Рауль и Дана. Индивидуальная техника для обеих ролей. Рассмотрим особый подход к диссоциации и ведению/ответу, а также как использовать спину в качестве мотора комфортных вращений. Все уровни. Пара не нужна.</label>
+                      <label for="mc3">08 июня №1, 13:00 – Рауль и Дана. Индивидуальная техника для обеих ролей. Рассмотрим особый подход к диссоциации и ведению/ответу, а также как использовать спину в качестве мотора комфортных вращений. Все уровни. Пара не нужна.</label>
                     </div>
                     <div class="row">
                       <input class="milongs" id="mc4" type="checkbox" name="milongs" value="08 июня №2, 14:30 – Нестор и Лиза. Баррида для партнеров и дам. С этим элементом мы найдём связь в паре, поиграем с музыкой, сделаем движение выразительно в ритм или мелодию. Уровни BC.">
@@ -519,19 +522,20 @@
                   </div>
                   <div class="row">
                     <input class="marks" id="privacyData" type="checkbox" name="marks" value="Согласен на обработку персональных данных*">
-                    <label for="privacyData">Согласен на обработку персональных данных<span class="redMark">*</span></label>
+                    <label for="privacyData">Согласен на обработку <a href="./privacy">персональных данных</a><span class="redMark">*</span></label>
                   </div>
                 </div>
                 <div class="regForm__block comment"> 
                   <div class="column">
                     <label for="comment">Комментарии к регистрации, ваши вопросы и пожелания</label>
-                    <textarea id="comment" name="comment" cols="30" rows="10" placeholder="Ваш ответ"> </textarea>
+                    <textarea id="comment" name="comment" cols="30" rows="10" placeholder="Ваш ответ"></textarea>
                   </div>
                 </div>
                 <div class="regForm__block footer">
                   <p>На уроках мы стараемся обеспечивать гендерный баланс. Поэтому регистрация партнерш без партнера на некоторые уроки может быть ограничена. Мы ведем запись заявок в лист ожидания, и при появлении свободных мест для партнерш мы предложим Вам записаться на желаемый урок.</p>
-                  <p>После обработки Вашей заявки администратором Фестиваля мы в течение 5 дней отправим подтверждение Вашего участия с суммой и инструкцией к оплате. Если Вы не получили подтверждения Вашей регистрации в течение этого срока, свяжитесь нами: tango@tango-festival.ru</p>
-                  <p><b>Организатор фестиваля:</b> Студия Тангомания Юлия Зуева </p>
+                  <p>После обработки Вашей заявки администратором Фестиваля мы в течение 5 дней отправим подтверждение Вашего участия с суммой и инструкцией к оплате. Если Вы не получили подтверждения Вашей регистрации в течение этого срока, свяжитесь нами: <a href="mailto:tango@tango-festival.ru">tango@tango-festival.ru</a></p>
+                  <p><b>Организатор фестиваля:</b> Студия Тангомания</p>
+                  <p>Юлия Зуева </p>
                   <button class="btn sendReg">Отправить заявку</button>
                 </div>
               </form>
