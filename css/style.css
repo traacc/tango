@@ -749,6 +749,11 @@ button.btn {
   justify-content: center;
 }
 
+.footer .footer__inner .footer__content .socialBtns button.btn svg {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
 .footer .footer__inner .footer__content .footer__info h4.title {
   color: #790000;
 }
