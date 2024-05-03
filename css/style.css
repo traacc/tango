@@ -2532,7 +2532,7 @@ table td {
     top: 0;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    width: 100%;
+    width: 95%;
     max-height: 100%;
   }
 
