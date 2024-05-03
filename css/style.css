@@ -1101,6 +1101,10 @@ button.btn {
   color: #790000;
 }
 
+.maestros .maestros__inner .maestros__list li a {
+  color: #790000;
+}
+
 .maestros .maestros__inner .maestros__list li img {
   border: 3px solid #fff;
   -webkit-box-shadow: 1px 1px 15px 0px #696969;
@@ -1132,6 +1136,10 @@ button.btn {
   font-weight: 600;
   text-decoration: underline;
   cursor: pointer;
+  color: #790000;
+}
+
+.djs .djs__inner .djs__list li a {
   color: #790000;
 }
 
@@ -1637,6 +1645,10 @@ section.perfomance .perfomance__inner .perfomance__list li {
   text-align: center;
   font-weight: 600;
   text-decoration: underline;
+  color: #790000;
+}
+
+section.perfomance .perfomance__inner .perfomance__list li a {
   color: #790000;
 }
 
