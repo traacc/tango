@@ -713,6 +713,14 @@ button.btn {
   font-weight: 600;
 }
 
+.footer .footer__inner .footer__orgInfo {
+  font-size: 14px;
+}
+
+.footer .footer__inner .footer__orgInfo.mobile {
+  display: none;
+}
+
 .footer .footer__inner .footer__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1049,12 +1057,12 @@ button.btn {
 
 .events .events__inner .events__list {
   margin-top: 1em;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding-left: 0;
+  padding-left: 1em;
   gap: 1em;
+}
+
+.events .events__inner .events__list li {
+  margin-bottom: 1em;
 }
 
 .events .events__inner .events__list .btn {
@@ -2176,6 +2184,14 @@ table td {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+  }
+
+  .footer .footer__inner .footer__orgInfo {
+    display: none;
+  }
+
+  .footer .footer__inner .footer__orgInfo.mobile {
+    display: block;
   }
 
   .footer .footer__inner .footer__content {
