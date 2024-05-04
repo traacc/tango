@@ -1803,6 +1803,17 @@ section.tornamentJury .tornamentJury__inner p a {
   text-decoration: underline;
 }
 
+section.tornamentJury .tornamentJury__inner .btn {
+  display: inline-block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: #825171;
+  color: #fff;
+  padding: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 .regDesc__text {
   text-align: justify;
 }
